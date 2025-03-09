@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="left">
+        <div class="logo">
+            <img src="assets/odin-lined.png" alt="logo" height="100px" width="auto">
+            ODIN
+        </div>
+        <div class="credit">
+            <p>Photo by Halie West on Unsplash</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <p>This is not a real online service! You know you need something <br>
+                like this in your life to help you realize your deepest dreams. <br>
+                Sign up <em>now</em> to get started.<br><br>
+                You <em>know</em> what to do.
+            </p>
+        </div>
+        <div class="form">
+            <div class="formheader">Let's do this!</div>
+            <form id ="formid" action="#" method="get">
+                <div class="formleft">
+                    <div>
+                        <label for="first_name">FIRST NAME:</label>
+                    </div>
+                        <input type="text" id="first_name" required>
+                    <div>
+                        <label for="email">EMAIL:</label>
+                    </div>
+                        <input type="email" id="email">
+                    <div>
+                        <label for="password">PASSWORD:</label>
+                    </div>
+                        <input type="password" id="password" minlength="6" maxlength="10" required>
+                </div>
+                <div class="formright">
+                    <div>
+                        <label for="last_name">LAST NAME:</label>
+                    </div>
+                        <input type="text" id="last_name" required>
+                    <div>
+                        <label for="phone">PHONE NUMBER:</label>
+                    </div>
+                        <input type="tel" id="phone" pattern="^[0-9]">
+                    <div>
+                        <label for="password_confirm">CONFIRM PASSWORD:</label>
+                    </div>
+                        <input type="password" id="password_confirm" minlength="6" maxlength="10" required>
+                </div>
+              </form>
+            
+        </div>
+        <div class="bottom">
+            <button type="submit" form="formid">Create Account</button> <br><br>
+            Already have an account? <span style="color: #596D48;">Log in</span>
+        </div>
+    </div>
+</body>
+</html>
